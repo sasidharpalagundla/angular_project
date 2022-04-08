@@ -1,0 +1,25 @@
+<body class="d-flex flex-column h-100">
+
+    <div class="login">
+
+        <form [formGroup]="login" (ngSubmit)="checkUser()">
+            <br><br>
+            <h2>Welcome</h2>
+            <br><br>
+            <input type="text" placeholder="Enter User ID" formControlName="uid" /> <br><br>
+            <input type="text" placeholder="Enter User password" formControlName="upwd" /><br> <br>
+            <input type="text" placeholder="Enter User role" formControlName="urole" /> <br><br>
+            <button (click)="checkUser()" class="btn btn-primary">Submit
+            </button>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br>
+            <br><br>
+            <br><br>
+            <br><br>
+        </form>
+    </div>
+</body>

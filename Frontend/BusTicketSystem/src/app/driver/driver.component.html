@@ -1,0 +1,40 @@
+<div class="driver">
+    <br>
+    <br>
+    <br>
+    <h2>Driver Profile</h2>
+    <br>
+    <div *ngIf="getrouteofdriver">
+        <button (click)="getdriverData()" class="btn btn-primary">Show Details</button>
+        <br>
+        <br>
+        <ul *ngFor="let item of driverData">
+            <li>Driver ID: {{item.eid}}</li>
+            <li>Driver Name: {{item.name}}</li>
+            <li>Driver RouteId: {{item.routeId}}</li>
+            <li>Driver Salary: {{item.sal}}</li>
+        </ul>
+        <ul *ngFor="let item of newbroute">
+            <p>The Route allocated is;</p>
+            <li>From: {{item.from}}</li>
+            <li>To: {{item.to}}</li>
+        </ul>
+    </div>
+    <!-- <h2>Employee Details</h2>
+    <button (click)="showemp()" class="btn btn-primary">Click Here</button>
+    <div *ngIf="showempdetails">
+        <app-getempdata></app-getempdata>
+    </div> -->
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br>
+
+</div>

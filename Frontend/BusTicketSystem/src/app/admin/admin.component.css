@@ -1,0 +1,17 @@
+.pass {
+    text-align: center;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border-radius: 0.3em;
+    margin: 0.3em;
+}
+
+.admin {
+    background-image: url("../../assets/95594fea-2121-4fd6-984d-62b01321ed8a_.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

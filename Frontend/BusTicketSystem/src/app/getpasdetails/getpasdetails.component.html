@@ -1,0 +1,26 @@
+<div class="card">
+    <table>
+        <thead>
+            <tr>
+                <th>Passenger Id</th>
+                <th>Passenger name</th>
+                <th> From</th>
+                <th> To</th>
+                <th> Seat</th>
+                <th> Date</th>
+                <!-- <th>Update</th> -->
+            </tr>
+        </thead>
+        <tbody *ngFor="let item of passdetails">
+            <tr>
+                <td>{{item.pid}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.from}}</td>
+                <td>{{item.to}}</td>
+                <td>{{item.seat}}</td>
+                <td>{{item.date | date }}</td>
+                <!-- <td><button>Update</button></td> -->
+            </tr>
+        </tbody>
+    </table>
+</div>

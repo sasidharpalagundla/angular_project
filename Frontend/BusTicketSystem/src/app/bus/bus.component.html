@@ -1,0 +1,13 @@
+<div>
+    <form [formGroup]="Busdata" (ngSubmit)="businsert()">
+        <input type="text" placeholder="Enter Bus Id" formControlName="bid" /> <br>
+        <input type="text" placeholder="Enter Start location" formControlName="bfrom" /> <br>
+        <input type="text" placeholder="Enter Drop location" formControlName="bto" /> <br>
+        <input type="text" placeholder="Enter Bus RouteId" formControlName="brid" /> <br>
+        <input type="text" placeholder="Enter Bus capacity" formControlName="bcap" /> <br>
+        <input type="text" placeholder="Enter Driver name" formControlName="bdriver" /> <br>
+        <input type="text" placeholder="Enter Clerk name" formControlName="bclerk" /> <br>
+        <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
+        <button type="reset" class="btn btn-primary" value="Reset">Reset</button>
+    </form>
+</div>

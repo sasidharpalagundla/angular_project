@@ -1,0 +1,32 @@
+table {
+    text-align: center;
+    list-style-type: none;
+    display: felx;
+    flex-direction: row;
+    background-color: gainsboro;
+}
+
+h1 {
+    font-weight: bolder;
+    color: black;
+}
+
+input {
+    border-radius: 0.3em;
+    margin: 0.2em;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border-radius: 0.3em;
+    margin: 0.3em;
+}
+
+* {
+    text-align: center;
+    /* background-image: url("../../assets/95594fea-2121-4fd6-984d-62b01321ed8a_.jpg"); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

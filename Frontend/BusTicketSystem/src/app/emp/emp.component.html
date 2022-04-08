@@ -1,0 +1,13 @@
+<div>
+    <form [formGroup]="addemp" (ngSubmit)="empinsert()">
+        <input type="text" placeholder="Enter Employee Id" formControlName="eid" /> <br>
+        <input type="text" placeholder="Enter Employee name" formControlName="ename" /> <br>
+        <input type="text" placeholder="Enter Employee role" formControlName="erole" /> <br>
+        <input type="text" placeholder="Enter Employee salary" formControlName="esal" /> <br>
+        <input type="text" placeholder="Enter Employee status" formControlName="estatus" /> <br>
+        <input type="text" placeholder="Enter the no of leaves" formControlName="eleaves" /> <br>
+        <input type="text" placeholder="Enter Bus Route Id" formControlName="erouteId" /> <br>
+        <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
+        <button type="reset" class="btn btn-primary " value="Reset">Reset</button>
+    </form>
+</div>

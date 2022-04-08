@@ -1,0 +1,13 @@
+<div>
+    <form [formGroup]="addroute" (ngSubmit)="routeinsert()">
+        <input type="text" placeholder="Enter RouteId" formControlName="rid"> <br>
+        <input type="text" placeholder="Enter Start location" formControlName="rform"> <br>
+        <input type="text" placeholder="Enter End location" formControlName="rto"> <br>
+        <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
+        <button type="reset" class="btn btn-primary" value="Reset">Reset</button>
+    </form>
+</div>
+
+<!-- // rid: String,
+//     from: String,
+//     to: String, -->

@@ -1,0 +1,53 @@
+<div class="passenger">
+    <h1>Book Your Ticket</h1>
+    <h3>Enter Your Details</h3>
+    <form [formGroup]="addpass" (ngSubmit)="bookticket()">
+        <input type="text" placeholder="Enter Passenger ID" formControlName="pid" [value]="pid" /> <br>
+        <input type="text" placeholder="Enter Passenger name" formControlName="pname" [value]="pname" /><br>
+        <input type="text" placeholder="Enter Passenger location" formControlName="ploc" [value]="ploc" /><br>
+        <input type="text" placeholder="Enter pick-up location" formControlName="pfrom" [value]="from" /><br>
+        <input type="text" placeholder="Enter drop location" formControlName="pto" [value]="to" /><br>
+        <input type="text" placeholder="Enter seat number" formControlName="pseat" [value]="seat" /><br>
+        <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
+        <button type="reset" class="btn btn-primary" value="Reset">Reset</button>
+        <!-- <input type="button" value="update" (click)="updatep()" /> -->
+    </form>
+    <br>
+
+    <div id="empdata">
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Passenger ID</th>
+                        <th>Passenger Name</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Seat</th>
+                        <th>Date</th>
+                        <!-- <th>Upadate</th> -->
+                    </tr>
+                </thead>
+
+                <tbody *ngFor="let item of passdetails">
+                    <tr>
+                        <td>{{item.pid}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.from}}</td>
+                        <td>{{item.to}}</td>
+                        <td>{{item.seat}}</td>
+                        <td>{{item.date | date }}</td>
+                        <!-- <td><button (click)="updatesend(item)">Update</button></td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+</div>

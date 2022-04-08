@@ -1,0 +1,32 @@
+/* div {
+    text-align: center;
+}
+*/
+
+
+li,
+p {
+    color: black;
+    font-weight: bolder;
+    background-color: white solid;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border-radius: 0.3em;
+    margin: 0.3em;
+}
+
+* {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-image: url("../../assets/48795633-2f92-4584-94eb-d569e9955ae2_.jpg"); */
+}
+
+/* btn btn-primary {
+    background-color: blue;
+    color: white soild;
+} */

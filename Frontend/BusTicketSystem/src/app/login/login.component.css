@@ -1,0 +1,36 @@
+body {
+    background-image: url("../../assets/ash-gerlach-6fF-Ojxov6o-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+input {
+    padding-left: 1em;
+    border-radius: 0.3em;
+}
+
+h2 {
+    color: white;
+    background-color: black;
+    font-weight: bolder;
+
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border-radius: 0.3em;
+    margin: 0.3em;
+}
+
+label {
+    background: white;
+    margin: 1em;
+    color: black;
+    font-weight: bolder
+}
+
+.login {
+    text-align: center;
+}

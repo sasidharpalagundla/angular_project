@@ -1,0 +1,25 @@
+<div class="admin">
+    <div class="pass">
+        <br>
+        <br>
+        <h1>Welcome Admin</h1>
+        <br>
+        <h2>Add Employee</h2>
+        <app-emp></app-emp>
+        <br><br>
+        <h2>Employee Details</h2>
+        <button (click)="showemp()" class="btn btn-primary">Click Here</button>
+        <div *ngIf="showempdetails">
+            <app-getempdata></app-getempdata>
+        </div>
+        <br>
+        <h2>Passenger Details</h2>
+        <button (click)="showpass()" class="btn btn-primary">Click Here</button>
+        <div *ngIf="passengerdetails">
+            <app-getpasdetails></app-getpasdetails>
+        </div>
+        <br>
+        <br>
+        <br>
+
+    </div>

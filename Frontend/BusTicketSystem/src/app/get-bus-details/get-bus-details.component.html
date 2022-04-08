@@ -1,0 +1,40 @@
+<table>
+    <thead>
+        <tr>
+            <th>Bus Id</th>
+            <th>Start</th>
+            <th>To</th>
+            <th>Capacity</th>
+            <th>Driver</th>
+            <th>Clerk</th>
+            <th> Date</th>
+            <th>Update</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let item of busDetails">
+        <tr>
+            <td>{{item.bid}}</td>
+            <td>{{item.from}}</td>
+            <td>{{item.to}}</td>
+            <td>{{item.cap}}</td>
+            <td>{{item.driver}}</td>
+            <td>{{item.clerk}}</td>
+            <td>{{item.date | date }}</td>
+            <td><input type="button" value="Update" (click)="updateBus(item)"></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<div>
+    <h4>UpdateBus</h4>
+    <form [formGroup]="Busdata" (ngSubmit)="businsert()">
+        <input type="text" placeholder="Enter Bus Id" formControlName="bid" /> <br>
+        <input type="text" placeholder="Enter start location" formControlName="bfrom" /> <br>
+        <input type="text" placeholder="Enter drop location" formControlName="bto" /> <br>
+        <input type="text" placeholder="Enter Bus capacity" formControlName="bcap" /> <br>
+        <input type="text" placeholder="Enter Driver name" formControlName="bdriver" /> <br>
+        <input type="text" placeholder="Enter Clerk name" formControlName="bclerk" /> <br>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+    </form>
+</div>
